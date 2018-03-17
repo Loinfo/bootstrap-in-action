@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-th-fragment="header">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap in action</title>
+    
+	<!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link href="../../css/blog.css" rel="stylesheet">
+</head>
+<body>
+	<div>
+		<h1>bootstrap in action</h1>
+		<a href="/users" th:href="@{~/users}">首页</a>
+	</div>
+	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+	    <div class="container">
+	    		<button class="navbar-toggler navbar-toggler-right" type="botton" 
+	    		data-toggle="collapse" data-target="#navbarsContainer">
+	    			<span class="navbar-toggler-icon"></span>
+	    		</button>
+	          <a class="navbar-brand" href="/" th:href="@{~/}">XBlog</a>
+	        <div class="collapse navbar-collapse" id ="navbarsContainer">
+	        		<ul class="navbar-nav mr-auto">
+	        			<li class="nav-item">
+	        				<a class="nav-link" th:href="@{~/users}">首页<span class="sr-only">(current)</span> </a>
+	        			</li>
+	        		</ul>
+	        </div>
+	    </div><!-- /.container -->
+	</nav>
+</body>
+</html>
